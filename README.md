@@ -1,0 +1,1 @@
+# nexts-cypress-component-testing-tailwind-example
