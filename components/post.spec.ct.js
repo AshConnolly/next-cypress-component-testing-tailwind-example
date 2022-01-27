@@ -1,7 +1,8 @@
 import { mount } from '@cypress/react'
 import Post from './post'
-// import '../styles/globals.css' // not allowed
-// import '../globals-generated.css' // generated tailwinf css file not allowed
+// import '../styles/globals.css' // not allowed*
+// import '../globals-generated.css' // generated tailwind css file test not allowed*
+// * https://nextjs.org/docs/messages/css-global
 
 it('renders a post', () => {
   mount(

@@ -19,4 +19,4 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-// import '../../styles/globals.css' // not allowed
+// import '../../styles/globals.css' // not allowed by next.js https://nextjs.org/docs/messages/css-global
