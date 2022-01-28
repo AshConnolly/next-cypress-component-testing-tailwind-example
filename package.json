@@ -5,9 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "cypress-comp-open": "cypress open-ct",
-    "cypress-comp": "cypress run-ct",
-    "tailwind-gen": " npx tailwindcss --input styles/globals.css --output globals-generated.css"
+    "cypress-comp-open": "npm run tailwind-generate && cypress open-ct",
+    "cypress-comp": "npm run tailwind-generate && cypress run-ct",
+    "tailwind-generate": " npx tailwindcss --input styles/tailwind.css --output styles/tailwind-generated.css"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",
