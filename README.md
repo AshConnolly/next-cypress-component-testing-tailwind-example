@@ -25,12 +25,7 @@ The hacky solution: generate a tailwind.css file and add it to each test in a hu
 import { mount } from '@cypress/react'
 
 export const mountWithStyles = passedJsx =>
-  mount(
-    <>
-      <link rel="stylesheet" href="/styles/tailwind-generated.css" />
-      {passedJsx}
-    </>
-  )
+  mount(passedJsx, { stylesheet: '/styles/tailwind-generated.css' })
 ```
 
 usage:

@@ -27,9 +27,5 @@
 import { mount } from '@cypress/react'
 
 export const mountWithStyles = passedJsx =>
-  mount(
-    <>
-      <link rel="stylesheet" href="/styles/tailwind-generated.css" />
-      {passedJsx}
-    </>
-  )
+  mount(passedJsx, { stylesheet: '/styles/tailwind-generated.css' })
+// ty @bahmutov! https://twitter.com/bahmutov/status/1487107403254534150
