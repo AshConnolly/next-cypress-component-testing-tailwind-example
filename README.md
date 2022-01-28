@@ -47,6 +47,7 @@ it('renders a post', () => {
   )
   cy.get('h1').contains('Hello World')
   cy.get('p').contains('This is some sample content')
-  cy.contains('TailwindCSS red text')
+  cy.contains('TailwindCSS red text').should('have.css', 'color', 'rgb(239, 68, 68)')
+  cy.contains('EmotionCSS blue text').should('have.css', 'color', 'rgb(0, 0, 255)')
 })
 ```
