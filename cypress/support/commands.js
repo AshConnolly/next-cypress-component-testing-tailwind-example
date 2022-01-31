@@ -23,9 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-import { mount } from '@cypress/react'
-
-export const mountWithStyles = passedJsx =>
-  mount(passedJsx, { stylesheet: '/styles/tailwind-generated.css' })
-// ty @bahmutov! https://twitter.com/bahmutov/status/1487107403254534150

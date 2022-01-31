@@ -2,7 +2,7 @@
 // import '../styles/tailwind-generated.css' // generated tailwind css file test not allowed *
 // * https://nextjs.org/docs/messages/css-global
 
-import { mountWithStyles } from '../cypress/support/commands'
+import { mountWithStyles } from '../mountWithStyles'
 import Post from './post'
 
 it('renders a post', () => {
